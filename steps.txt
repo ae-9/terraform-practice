@@ -1,0 +1,29 @@
+
+create the base ec2 instance via the console
+create an ami for the instance
+    record the following:
+        - name (may not be needed)
+        - architecture
+        - root-device-type
+        - virtualization-type
+        - owner
+        - ami id
+        - ami name
+        - ami location
+        - platform details
+    * make sure this piece matches the name of your AMI name
+        data "aws_ami" "rhel_9" {}
+
+create the ec2
+    - ami 
+    - instance type
+    - subnet_id
+    - vpc security group ids
+    - associate public ip address 
+    - source destination check
+    - key name
+    - user data
+
+    root disk
+    - volume size
+    
